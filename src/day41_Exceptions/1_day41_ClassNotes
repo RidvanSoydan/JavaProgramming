@@ -49,7 +49,7 @@ Exceptions: unexpected or unwanted events
 
 
 
-Exception handlings:
+Exception handlings :
 
 		1. Try & Catch blocks: used for handling checked and unchecked exceptions
 

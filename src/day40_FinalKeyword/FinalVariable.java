@@ -18,7 +18,7 @@ public class FinalVariable {
 
         final double pi = 3.14;
 
-        //pi = 4.14; final variables can not be reassigned
+        //pi = 4.14; final variables can not be reassigned.
         // pi = 5.4;
 
         System.out.println(pi);
