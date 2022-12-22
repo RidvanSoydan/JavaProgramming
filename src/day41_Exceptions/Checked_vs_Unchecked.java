@@ -12,7 +12,7 @@ public class Checked_vs_Unchecked {
         int b = 0;
 
         //System.out.println(  a / b  ); // Exception in thread "main" java.lang.ArithmeticException: / by zero
-        //System.out.println("Wooden Spoon");
+        //System.out.println("Wooden Spoon"); // If class have unchecked exception it will stop the program
 
         char[] characters = {'A', 'B', 'C'};
         //                    0,   1,   2
