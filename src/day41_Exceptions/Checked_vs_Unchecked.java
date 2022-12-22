@@ -11,7 +11,7 @@ public class Checked_vs_Unchecked {
         int a = 10;
         int b = 0;
 
-        // System.out.println(  a / b  );
+        //System.out.println(  a / b  ); // Exception in thread "main" java.lang.ArithmeticException: / by zero
         //System.out.println("Wooden Spoon");
 
         char[] characters = {'A', 'B', 'C'};
@@ -32,7 +32,6 @@ public class Checked_vs_Unchecked {
 
         String str2 = ""; // object != null
         System.out.println(str2.isEmpty());
-
 
 
         // checked Exception:
