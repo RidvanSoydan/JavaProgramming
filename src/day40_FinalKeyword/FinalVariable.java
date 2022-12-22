@@ -13,12 +13,16 @@ public class FinalVariable {
         this.birthDay = birthDay;
     }
 
+
     public static void main(String[] args) {
 
         final double pi = 3.14;
 
         //pi = 4.14; final variables can not be reassigned
         // pi = 5.4;
+
+        System.out.println(pi);
+
 
         final String name;
 

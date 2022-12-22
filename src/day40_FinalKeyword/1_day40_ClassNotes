@@ -34,7 +34,7 @@ Final Keyword: Unchangeable
 
         • Used to restrict the user.
         • Makes the features unchangeable.
-        • Final keyword is only applicable to a variable, a method or a class.
+        • Final keyword is only applicable to a VARIABLE, a METHOD or a CLASS.
 
 
     Final Variable
@@ -55,10 +55,10 @@ Final Keyword: Unchangeable
         Interview Question:
         Difference between final vs finally vs finalize.
 
-            final: is a KEYWORD for variables, methods, classes. and make them unchangeable.
+            final   : is a KEYWORD for variables, methods, classes and make them unchangeable.
 
-            finally: is a BLOCK. optional for try§catch (last block)  in exception handling.
-            It always get executed, if we manually not terminate the program.
+            finally : is a BLOCK. optional for try§catch (last block) in exception handling.
+                     It always get executed, if we manually not terminate the program.
 
             finalize: is a METHOD that the garbage collector calls it to destroy the object.
-            It comes from Object class, and every object has finalize method.
+                      It comes from Object class, and every object has finalize method.
