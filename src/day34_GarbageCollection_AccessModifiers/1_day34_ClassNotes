@@ -1,0 +1,100 @@
+Java Day34
+
+Topics:
+		1. Static Continue:
+				static block
+				static import
+
+		2. Garbage Collection
+		3. Access Modifiers: public, private, default
+
+
+package name: day34_GarbageCollection_AccessModifiers
+
+
+static block: used for initializing static variables
+			  gets executed as son as the class is loaded
+			  runs first before everything, only runs one time
+			  if the static variables need several steps to be initialized
+
+                 • It’s a set of instructions that is run only once when a class is loaded into memory
+                 • A static block is also called static initialization block
+
+*** In java classes can be static but pre condition is there has to be nested classes
+            Outer class can not be static, there is no way
+            Inner class can be static
+
+
+static import vs regular import
+
+		regular import: imports everything from the class
+
+			import packageName.className;
+			import packageName.*;
+
+
+		static import:
+
+			import static packageName.className.staticMember;    // imports one static member of a class
+			import static packageName.className.*;			     // imports all static members of a class
+
+
+Garbage (Çöp) Collection: Collection of unreferenced (garbage) objects
+                          To save memory
+
+		unreferenced objects: Two ways
+
+			1. null keyword:
+					String str = "Java";
+					str = null;         // Making unreferenced
+
+
+			2. creating a new object
+
+					String str = "Java";
+					str = "Python";     // Now "Java" is unreferenced because we assigned str new value, old one is garbage
+
+
+Garbage Collector: responsible for collecting the unreferenced objects from java heap and destroys it ( finalize())
+
+        • JVM periodically runs a process known as the garbage collector, which
+          removes unreferenced objects from memory
+        • It is automatically done by the garbage collector (a part of JVM)
+        • Only unreferenced objects will be chosen
+
+
+Access Modifiers: define the accessibility
+
+        • There are 4 access modifiers available in Java:
+
+                * public
+                * protected
+                * default
+                * private
+
+        • A top level java class can have two access modifiers: public and default
+        • Variables, Constructors and methods can have all four access modifiers
+
+
+		public > protected > default > private
+
+	    private: ONLY reachable within the same class, not open to others
+
+	    default: ONLY reachable within the same package
+
+	    public: ALWAYS reachable
+
+
+
+            Access Modifiers         class   package     Subclass    World
+            *public                   Yes      Yes          Yes       Yes
+            *protected                Yes      Yes          Yes        No
+            *default (no modifier)    Yes      Yes           No        No
+            *private                  Yes       No           No        No
+
+
+
+
+
+
+

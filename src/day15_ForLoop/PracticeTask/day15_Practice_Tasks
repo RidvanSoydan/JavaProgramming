@@ -1,0 +1,74 @@
+Tasks:
+
+    1. Write a program that can reverse any given string
+
+      			String str = "Java"; ==> avaJ
+      		 //			      0123
+
+	2. Write a program that can return the sum of even numbers between 1 to 100
+
+	3. Write a program that can return the sum of odd numbers between 1 to 100
+
+	4. write a program that can calculate the sum of all numbers between 1 to any given number
+            ex:
+                input: 100
+                output: 5050
+
+                input: 50
+                output: 1275
+
+
+	5. Write a program that can return the factorial number of any given number
+
+            Ex:
+                input: 5
+                output: 120
+
+                	( because: 5! = 5 * 4 * 3 * 2* 1 = 120 )
+
+
+    6. write a program that can retive the digits, letters and special characters from a string
+            Ex:
+                input:
+                    mn@#123Ab!
+
+                output:
+                    letters: mnAb
+                    digits: 123
+                    special chars: @#!
+
+
+    7. Write a program that can return the sum of digits from a  string
+             Ex:
+                 input: A1B2C3
+
+
+
+	8. Write a program that can check if the given String is palindrome
+
+			Ex:
+				input:
+					Level
+
+				output:
+					true
+
+
+				input:
+					Anna
+
+				output:
+					true
+
+       9. .Write a program that can return the unique characters from a String
+
+                      Ex:
+                          input:
+                              AABCCD
+
+                          output:
+                              BD
+
+       10. Given an int n, print true if it is within 10 of 100 or 200.
+
+           Note: Math.abs(num) computes the absolute value of a number.

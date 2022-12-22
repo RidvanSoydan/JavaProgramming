@@ -1,0 +1,188 @@
+Java Day38
+Topic:  IS A relation vs HAS A relation
+		Method Overriding
+
+Package name: day38_Inheritance
+
+Warmup task:
+	carTask:
+		Create a class called Car
+			instance variables:
+				brand, model, year, price, color, miles
+
+				add a constructor to set all the fields
+
+			instance methods:
+				start(), drive(),toString()
+
+		Create the following sub classes of Car:
+			1. Toyota:
+					extra methods:
+							reliabile()
+
+			2. BMW:
+					extra methods:
+						breaksDown()
+						racing()
+
+			3. Tesla:
+					extra methods:
+						autoPilot();
+
+
+
+
+IS A relation vs HAS A relation:
+
+	IS A:
+		class Animal{
+
+		}
+
+		class Dog extends Animal{  // Dog IS A animal
+
+		}
+
+
+		class Employee{
+
+		}
+
+		class Tester extends Employee{ // Tester IS A Employee
+
+		}
+
+
+	HAS A:  ==> One class is used another class this means HAS A relation, there is no inheritance
+                    Scrum Team and Tester; Tiger and Zoo...
+
+		class Tester extends Employee{
+		}
+
+		class ScrumTeam{ // ScrumTeam HAS A Tester
+			Tester
+		}
+
+		class Tiger extends Animal{ // Tiger IS A animal
+		}
+
+		class Zoo{  // Zoo Has A Tiger
+			Tiger
+		}
+
+
+
+		class Engine{
+		}
+
+		class Car{ // Car HAS A Engine
+			Engine
+		}
+
+
+Method Overloading  :   Multiple different methods having the same name.
+					    Parameters MUST be different
+					    ANY method can be overloaded
+
+Method Overriding   :   Giving different implementations to the method
+                        One method having multiple different implementations
+
+Method Overriding Rules    :
+
+        • MUST happen in the SUB CLASS
+        • Return type, method name and parameters of the overridden method must be SAME
+        • Access modifier of the overridden method needs to be SAME or MORE VISIBLE
+        • We CAN NOT override methods with private access modifier or with static & final specifiers
+        • ONLY the INSTANCE METHODS (not private & not final) can be overridden
+
+
+        Method Overloading                              Method Overriding
+
+        Method overloading is performed within class    Method overriding occurs in two classes that
+                                                        have IS-A relationship
+
+        parameter must be different                     parameter must be same
+
+        Access specifier can be changed                 Access specifier must not be more restrictive
+                                                        than original method
+
+        private and final methods can be overloaded     private and final methods can not be overridden
+
+        Return type of method does not matter, it can   Return type must be same in method overriding
+        be same or different
+
+
+Access Modifiers:
+
+	public > protected > default > private
+
+Object Class: Presented in "java.lang" package.
+			  Parent of all the classes, every single java class is the child of object class
+			  Implicitly extended to all classes
+
+-----------------------------
+
+Car:
+	start(){car started}
+
+Toyota extends Car:
+	start():
+		twist the key to Ignition
+
+Audi extends Car:
+	start():
+		push start button
+
+Tesla extends Car:
+	start():
+		say "Start"
+
+BMW extends Car:
+	start():
+		Call mechanic
+		Jump start
+
+-----------------------------
+
+Shape:
+	variable:
+		name
+
+	Add A constructor to set the filed
+
+	Methods:
+		area(){return 0}
+		perimeter{return 0}
+		toString(): name, area, perimeter
+
+
+Circle
+	r
+	pi
+
+	toString(): name, r, pi, area, perimeter
+
+Square
+	s
+
+	toString(): name, s, area, perimeter
+
+Rectangle
+	l
+	w
+
+	toString(): name, l, w, area, perimeter
+
+....
+
+
+
+
+
+
+
+
+
+
+
+

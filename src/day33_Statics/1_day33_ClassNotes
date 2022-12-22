@@ -1,0 +1,106 @@
+Java Day33
+
+Package name: day33_Statics
+
+Topic:  1. Creating Multiple class in a file
+
+            class Student { // default access modifier
+            }
+                                            *** There can be just one "public" class inside file
+                                            *** As many as classes can be created inside a file
+
+            public class StudentTask { // public access modifier
+            }                          // public class name must match with file name, rest of them cant be public
+
+  *** While sharing two or more custom class codes in Discord, create a class under src folder => one public, others default
+
+		2. Statics
+			- Variables
+			- Methods
+			- static import
+
+Warmup tasks:
+
+	Student Task:
+
+		1. Create a class called Student:
+
+				Attributes:
+				name, gender, age, studentID, grade
+
+				Add a constructor that allows user to create object by setting the name of student
+
+				Add a constructor that allows user to create object by setting the name and gender of the student
+
+				Add a constructor that allows user to create object by setting the name and studentID of the student
+
+				Add a constructor that allows user to create object by setting the name, studentID and grade of the student
+
+				Add a constructor that allows user to create object by setting the name, gender and age of the student
+
+				Add a constructor that allows user to create object by setting the name, gende, age and studentID of the student
+
+				Add a constructor that allows user to create object by setting the name, gende, age, studentID and grade of the student
+
+				Actions:
+					toString()
+					study()
+
+
+instance    : belong to the object
+
+		      each object has its own copy of the instances (can have multiple copies)
+
+
+static      : belongs to the class, for common values...
+
+		        • There is only one copy of statics that's shared by all objects of the class
+                • Declared with static keyword
+                • Belongs to the class, and can be called through the class
+                • All the objects of the class shares the same copy
+
+Statics members  :
+
+                Static is applicable for the following:S
+
+                • Variables
+                • Methods
+                • Blocks
+                • Class
+
+        1. Static Variables
+
+                • Refer to the common property of all objects
+                • It gets memory only once in the class area at the time of class loading
+                • A single copy of a class ‘s static variable is shared by all objects of the class
+                • If changes are made to static variables, all other instances will see the effect of the change
+
+                public class Circle {
+                    public double radius;
+                    public static double pi = 3,14;
+                }
+
+                public class CydeoStudent {
+                     public String name;
+                     public int age;
+                     public static String schoolName = "Cydeo School";
+
+                }
+
+        2. Static Methods
+
+                • If we declare any methods as static, it’s known as static methods
+         ****   • A method that can be called using class name, without creating objects ****
+                • Objects can also call static methods
+         ****   • Static methods only accept static members  ****
+
+
+
+         Static method                                      Instance method
+
+         Static methods can not access instance             Instance methods can access instance
+         methods and instance variables directly            methods and instance variables directly
+
+         In static methods we can not use the “this”        Instance methods can also access static
+         keyword                                            methods and static variables directly
+

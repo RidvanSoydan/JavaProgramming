@@ -1,0 +1,128 @@
+Java Day23
+Topics: Custom Method Intro:
+			Void method
+
+package name: day23_CustomMethods_Void
+
+Array: one of the three data structures
+		size is fixed
+		supports primitives & non-primitives
+		can be multi-dimensional
+
+	one dimensional array: array of elements
+			[index Of Elements]
+
+	multi-dimensional array: array of arrays. two or more dimensional ([][]..)
+			[index of Arrays][index Of Elements]
+			[][][]
+			.....
+
+			n dimensional array contains (n-1) dimensional array
+
+
+Arrays: utility class for array. in "java.util" package
+
+		toString() ==> To be able to print 1D Arrays
+		deepToString() ==> To be able to print 2 or More (Multi) Dimensional Arrays
+
+		sort()
+		equals()
+		copyOf()
+		copyOfRange()
+
+String methods:
+
+	toCharArray()
+	split()
+
+for each loop: already iterated
+			   iteration order is fixed
+
+			   THERE MUST BE A DATA STRUCTURE
+
+			   for(DataType variable : Array){
+               }
+
+Task:
+		step1 : reverse "Java"
+		....
+
+		step5: reverse "python"
+		...
+
+		step10: reverse "Cydeo"
+		...
+
+
+Method: means Function ==> Every time you call method, some functions will be executed...
+                           We call methods to be able to do some tasks...
+
+        *** Grouping a series of code fragments to perform a task
+        *** Allows us to reuse the function rather than repeating same set of statements
+
+        ******Methods cannot be declared inside another method, it must be outside the other method*********
+  declaring a method    :
+
+
+	public             static         void           main      (String[] args){      }
+
+	Access-Modifier	   Specifier	  ReturnType     MethodName(Parameter){         }
+            //You can change the places of access modifier and specifier but advised one is; first access modifier then specifier...
+
+	 *** Access modifiers : public, protected, default, private    (4 access modifiers in Java)
+                        ==> determines the visibility, public is open to the world and always accessible.
+
+     *** Specifier        : static, final, abstract, synchronized
+                        ==> Allows us to call the method through the class name.
+
+	 *** Return Type      : void, Any Data Type
+                        ==> determines if the method returns a value. If return type is void,
+                            method does not return any value. Just perform the function, task...
+
+	 *** Method Name      : can be any name ==> Must be meaningfull, descriptive...
+                        ==> Descriptive name of the function. The same rules that apply to variable names
+                            also apply to method names.
+
+	 *** parameter        : Any Data Type
+                        ==> method name is always followed by a set of parenthesis, can be capable of receiving arguments.
+                        ==> If there is a information that function must have...
+
+            * When we declare a method, parameters can be given
+            * Parameters passed to the method act like variables
+            * Used for providing additional information the method must have to perform its task
+            * Must specify the values the method should use
+            * Values need to be given in the parentheses that follows method name
+            * The values we passed to the method are called arguments
+            * Arguments can be provided as values or as variables.
+
+
+    Calling a method    :
+
+        *** When we need to script to perform the task the method does
+        *** The method executes the code in that code block
+        *** When it has finished, the code continues to run from the point where it was initially called
+
+
+    Custom Methods      :
+
+	    1. void methods
+	    2. void methods with arguments
+	    3. return methods
+	    4. returns with argumnet
+	    5. overloading
+
+
+    create a function that can print all the numbers between X and Y
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+Java Day10
+Topics: Nested If
+		if without curly braces
+		Ternaries
+
+package name: day10_NestedIf
+
+
+If Statements: used for conditional statements. if the condition true, the block gets executed
+
+	single if: for one condition
+				if(Condition)
+
+	if & else: for 2 condition ONLY
+	else{
+
+	}
+
+	multi-branch if: for 3 or more conditions
+		else if(Condition)
+
+	nested if: Pre-condition (öncelikli şart) (Most important condition, you have 8 conditions but all depends on one condition)
+	 (something HAS TO BE MET FIRST in order for something happen)
+
+        //Nested if statements can be used for creating a pre-condition
+        //It’s used if one condition can be evaluated to several alternatives
+
+
+Ternaries: shortcut of if statement
+            It does the same thing with the if statement, just shortcut
+            Ternaries can be used whenever the if block printing with same value and same data type
+
+ 	if          :        (Condition)?               (normally if (condition)        )
+ 	else        :                   :(colon)        (normally else { }              )
+ 	else if     :       :(Condition)?               (normally else if (condition)   )
+
+

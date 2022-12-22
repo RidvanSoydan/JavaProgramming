@@ -1,0 +1,141 @@
+Java Day30
+
+Topics: Custom Class Intro
+
+package name: day30_CustomClass
+
+
+warmup tasks:
+
+	1. write a program that can swap the first and last elements of an ArrayList
+
+	2. Write a program that can move all the zeros to the last indexes of ArrayList
+
+					Ex:
+						list: {1,0,2,0,3,0,4,0}
+
+					output:
+						[1, 2, 3, 4, 0, 0, 0, 0]
+
+
+	3. Write a program that can extract the special characters, digits and letters from a string and stores them into separate ArrayLists of Characters
+				Ex:
+					str = "ABCD123$%#@&456EFG!"
+
+				output:
+					list1: {1, 2, 3, 4, 5, 6}
+					list2: {A, B, C, D, E, F, G}
+					list3: {$, %, #, @, &, !}
+
+
+CLASS   :
+        • Where Objects came from
+        • An entity that determines how an object will behave and what the object will contain
+        • A blueprint or set of instruction to build a specific type of Object
+        • We dont create main method, we create classes for creating object, not running
+
+OBJECT  :
+        • Instance of a class
+        • An object can store data
+        • The data stored in an object are called FIELDS
+        • Multiple objects can be created from a class
+
+Instance Variables  : (Multiple copies can be created)
+
+        • Declared inside the class and outside any methods/blocks
+        • Belongs to the object and each object has its own memory
+        • Each object has a separate copy of the instance variable
+
+Instance Methods    :
+
+        • Does not have static keyword
+        • Belongs to the object
+        • Each Object has a separate copy of the instance methods
+
+Creating an Object/Instance :
+
+        * The new keyword is used to create an instance of a class
+
+               Dog             dog1         =     new        Dog ();
+           Class Name       Object Name         Keyword    Constructor
+
+Accessing an object’s Data and Methods  :
+
+        * An Object’s members refer to it’s data fields and methods. After object is created its
+          data can be accessed and its methods can be invoked using the dot operator (.)
+
+            dog1.name = "Lucy";
+            dog1.age = 4;
+            dog1.eat();
+
+
+      CLASS                                        OBJECT
+
+      Class is a collection of similar objects     Object is an instance of a class
+      Class is conceptual (is a template)          Object is real
+      No memory is allocated for a class           Each object has its own memory
+      Class can exist without any objects          Objects can not exist without a class
+
+
+
+
+Custom Class:
+	1. Instance variables & instance methods
+	2. toString,
+	3. Constructors
+	4. statics
+	...
+
+
+Car Class:
+
+	Attributes:
+		brand, model, color, year, price
+
+	Actions:
+		drive(), start(), stop(), toString(), setInfo()
+
+
+Student Class:
+
+	Attributes:
+		name, gender, age, studentID
+
+	Actions:
+		eat(), sleep(), drink(), code()
+		setInfo(): to set all the attributes of student object
+		toString(): to print the full info of student
+
+
+Car Objects:
+
+	create 3 objects of Car
+
+
+
+class starta at 2:15 pm
+
+
+this. keyword: used for calling the instance variables
+
+
+
+Employee Class:
+
+		Attributes:
+			name, id, gender, jobTitle, salary, isFullTime(boolean)
+
+		Actions:
+			toString()  :to be bale to print each employee object
+			setInfo()   :to be able to set all the attributes
+			work()...
+
+CapitalOne Class:
+
+	1. create 5 Employee objects
+	2. store those 5 employee objects into an array
+	3. how many employees are full time employees?
+	4. What's the minimum salary
+	5. what's the maximum salary
+
+

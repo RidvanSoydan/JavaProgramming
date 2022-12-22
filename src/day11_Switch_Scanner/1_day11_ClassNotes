@@ -1,0 +1,130 @@
+ava Day11
+Topics: Switch Statement
+		Scanner Intro
+
+package name: day11_Switch_Scanner
+
+Warmup Tasks:
+
+	1. Create a class called Browser. Write a program that can display the name of selected browser
+	        1. declear a String variable named browserName
+	        2. Assume that the valid browsers are: chrome, firefox, opera, safari, edge
+	        3. if the browser name does not match with the valid browsers' names,
+	        out put should be: Invalid Browser Name
+
+	        Ex:
+	        	String browser = "chrome";
+
+	    	Output:
+	    		Chrome Browser is selected
+
+			Note: MUST use nested if
+
+	2. Write a program that can convert numbers 0~9 to words.
+
+		NOTE: MUST use ternary
+
+
+come back at 11:15am
+If Statements SHort Quiz
+
+
+
+Switch Statement: switch, case, default, break  //Close to Multi Branch If Statements
+                                                //Anything could be done with switch statements
+                                                  could be done with regular if statetements but reverse is not possible
+                                                //But in some senarios switch statements is faster than regular if statements
+
+    Switch-case statement used to compare the
+    value of a variable with multiple values and
+    execute some statements based on the match.
+
+
+	syntax:
+		switch(Data){                      //Data can be int, char and String...
+
+			case data1:
+					Statements;
+					break;
+
+			case data2:
+					Statements;
+					break;
+
+			default:                //This is similar to else block of multi branch if statement
+					Statements;
+					break;
+
+		}
+
+
+
+	Case value MUST match with switch' data type and UNIQUE
+
+	Switch' Data CAN NOT be long, float, double and boolean data types
+
+	break: used for exiting the switch.
+			if we don't give the break statement, switch statement continue
+			to execute the next block(s) until the (break statement) or ( } ) of the switch
+
+	default block gets executed if none of the case blocks matched.
+			there can ONLY BE ONE default block
+
+	or logic we can use it in switch by declaring case blocks back to back
+
+
+
+Task:
+	1. NameOfMonth  (1~12)
+	2. NumberToWord (0~9)
+	3. a char variable named grade is given. use switch statement to print the following messages:
+			'A': excellent
+			'B': great job
+			'C': good
+			'D': passed
+			'F': failed
+			other wise: invalid
+
+
+	4. NumberOfDays
+			28 Days: 2
+			30 days: 4, 6, 9, 11
+			31 days: 1, 3, 5, 7, 8, 10, 12
+
+			If(1~12){
+
+
+			}else{
+				Invalid
+			}
+
+
+Scanner Intro:
+
+There is a utility package in java: import    . java. util.    Scanner
+                                   Keyword        package       class
+
+
+                            Scanner class is presented under the package util, util is one the sub package of java
+                            In order to use it you need to import it by using import statement.
+                            Java package has lots of system libraries, packages we use.
+                            Scanner class; Provides the methods to get inputs (girdi),
+                            ***one of the main advantage of
+                            scanner class is allows us to get user input,
+                            ***it can connect java program with our keyboard
+                            ***Has methods whenever we called it, it allows us to read whatever we typed on our keyboard
+                            ***Without import you cannot use scanner...
+                            ***Scanner statement generally is written between package and class names.
+
+
+
+           Method Name              Description
+           nextByte()               Returns input as a byte
+           nextShort()              Returns input as a short
+           nextInt()                Returns input as an int
+           nextLong ()              Returns input as a long
+           nextFloat()              Returns input as a float
+           nextDouble()             Returns input as a double
+           nextBoolean()            Returns input as a boolean
+           next()                   Returns input as a String, (reads the input only until a space)
+           nextLine()               Returns input as a String, (reads the entire input until the new line (press enter))

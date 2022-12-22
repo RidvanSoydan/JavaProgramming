@@ -1,0 +1,107 @@
+Java Day15
+Topics: String Continue
+		Loops Intro: for
+
+package name: day15_ForLoop
+
+Warmup tasks:
+	1. Write a program that asks user to enter a word. If the work starts with x, replace it with a.
+                    Input:
+                        xcodex
+                    Output:
+                        acodex
+
+	2. Write a program that asks user to enter a word. and replace all the x or X with character a
+                    Input:
+                        xcodeX
+                    Output:
+                        acodea
+
+	3. Write a program that asks user to enter first and last names, and then prints the full name in regular format (first character in upper case)
+
+                    input:
+                        firstName = "cyDEo"
+                        lastName = "SCHOOL";
+
+                    output:
+                        Cydeo School
+
+
+
+    Loops (Döngü) meaning == repeated cycle... repeated statement...
+
+            ***Loop function in java, help us to repeat statement that we want to repeat...
+            ***Instead of repeating by yourself, create a loop and put it inside the loop,
+                it will repeat for you multiple times...
+
+            • Loops check a condition. (boolean conditions)
+            • If Condition returns true, a code block will run
+            • The condition will be checked again
+            • It repeats until condition returns false.
+
+
+
+             • There are three types of loops:
+                        1. For loop ==> Regular For Loop and For-In Loop
+
+              for (initialization,                    condition,                  Iteration) { statement }
+                   starting point of the for loop     ending point                (yineleme)
+
+                     ***Runs the given code a specific number of times.
+                     ***Initialization is the starting point of the loop. (can be any variable)
+                     ***Condition is the ending point of the loop.
+                     ***Iterator is responsible for making the condition false.
+
+                        ==> If you know exact number of repeating you can use for loop, (Hello World , 10 times)
+                            if not you dont know exact number you cannot use for loop...
+                        ==> Because you need to specify the initialization and condition as the components of for loop...
+
+                        ==> When for loop start execution, first it will execute initialization, then it checks the condition,
+                            if condition false, loop gets terminated, (When the condition expression evaluates to false, loop stops running)
+                            if condition true, statement within the loops body gets executed, as long as the condition is true
+                        ==> Iterator makes the condition getting false
+                            increases or decreases the initialization's value to be able to get condition false...
+                            The Iteration gets executed after each iteration through the loop
+
+                For Loop Flow
+                1. The first time the loop is run, the variable is assigned by a value.
+                2. Every time the loop is run, condition is checked
+                3. Then the code inside loop (between curly brackets) gets executed
+                4. When the statements in curly braces have finished, the iteration gets executed.
+
+                        2. While loop
+                        3. Do while loop
+
+
+Tasks:
+	1. print the following shape:
+
+				* * * * * *
+                * * * * * *
+                * * * * * *
+                * * * * * *
+                * * * * * *
+                * * * * * *
+                * * * * * *
+                * * * * * *
+
+
+    2. Write a method which prints out the numbers from 1 to 100 but for numbers which are a multiple of both 3 and 5, print "FINRA" instead of the number,  for numbers which are a multiple of 3, print "FIN" instead of the number and for numbers which are a multiple of 5, print "RA" instead of the number.
+
+        ex:
+            output:
+                1 2 FIN 4 RA FIN 7 8 FIN RA 11 FIN 13 14 FINRA 16 17 FIN
+
+
+
+    3. Write a program that can calculate the sum of all integers between 1 to 100
+
+
+
+Tasks:
+	1. Write a program that can reverse any given string
+
+			String str = "Java"; ==> avaJ
+		 //			      0123
+
+

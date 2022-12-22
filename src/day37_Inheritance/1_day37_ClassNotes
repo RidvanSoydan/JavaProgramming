@@ -1,0 +1,205 @@
+Java day37
+
+Topic: Super keyword
+	   Types Of Inheritance
+
+Package name: day37_Inheritance
+
+
+OOP Inheritance :  to build IS A relation between classes (parent and child, super and sub)
+
+			        easiest way to get rich ===> extends
+
+		child class (sub class)     :can inherite all the variables & methods (visible) from the parent class
+
+		parent class (super class)  :can not inherit anything from child class.
+		                             contain all the common features that are meant to be inherited
+
+		Advantages  :
+			less codes
+			improves the reusability
+			clean
+			less memory usage
+			easy to maintain
+
+
+Constructor calls in inheritance:
+
+        1. Constructors can not be inherited to the child classes because constructors name is same with class name.
+            But child class must call one of parent class’ constructor
+
+        2. If parent class has default constructor, sub class calls it implicitly, otherwise
+              super class’ constructor need to be called explicitly in the sub class (by super keyword)
+
+        3. The super keyword refers to an object’s super class. We can use the super
+              keyword to call a superclass constructor
+
+
+this keyword    : refers to the instances of Current class
+	this.       : calls instance variables & instance methods
+	this()      : calls the constructor of Current class
+
+
+super keyword   : refers to the instances of Parent class
+	super.      : calls instance variables & instance methods of super class
+	super()     : calls the constructor of Parent class
+
+
+
+        Types of Inheritance
+
+            • Single Inheritance        : Sub classes inherit the features of one super class
+                B -> A
+
+            • Hierarchical Inheritance  : Once class serves as superclass for more than one sub class
+                B -> A,    C -> A,      D -> A
+
+            • Multi Level Inheritance   : Subclass will be inheriting a Super Class and as well as the
+              subclass also act as the Super Class to the other class
+                B -> A,     C -> B
+
+            • Multiple Inheritance      : Java DOES NOT support multiple inheritance with classes. One
+              class can not have more than one superclass and inherit features from all parent class
+               C -> A,      C -> B
+
+            *** Child class can not be parent class of its parent class
+
+
+	    Class A  extends  Class B
+
+		one class only extends one class
+		one class can be extended by multiple classes
+
+
+
+Single Inheritance :
+
+Person
+	name, age, gender
+
+EmployeeTask
+
+	Employee extends Person:
+		name, age, id, gender, jobTitle, salary
+		work(), toString()
+
+	Tester extends Employee
+			creatingTicket()
+
+	Developer extends Employee
+			fixBugs()
+
+	Teacher extends Employee
+			teaching()
+
+	Driver extends Employee
+			driving()
+
+	ScrumMaster extends Employee
+
+	....
+
+
+Hierarchical Inheritance:
+
+	class Phone{
+		a
+	}
+
+	class Iphone extends Phone{ // iphone: a, b.   //Iphone IS A Phone
+		b
+	}
+
+	class Samsung extends Phone{ // samsung: a, c   //Samsung IS A Phone
+		c
+	}
+
+	class LG extends Phone{ //LG: a d 			// LG IS A Phone
+		d
+	}
+
+	class Nokia extends Phone{ //Nokia: a, e
+		e
+	}
+
+
+Multi Level Inheritance:
+
+	class Person{ // person: a
+		a
+	}
+
+	class Employee extends Person{ // employee: a, b
+		b
+	}
+
+	class Tester extends Employee{ //tester: a, b, c
+		c
+	}
+
+	class ManualTester extends Tester{ // namually tester: a, b, c, d
+		d
+	}
+
+
+Multi Level Inheritance
+
+A {
+	a
+}
+
+
+B extends A{ // B: ab
+	b
+}
+
+
+C extends B{  //C: abc
+	c
+}
+
+
+D extends C{ //D: abcd
+	d
+}
+
+
+Multi Level Inheritance :
+
+class X{
+	x
+}
+
+class Y extends X, Z{ // Java does not support, one class only extends one class
+	y
+}
+
+class Z{
+	z
+}
+
+
+
+Task:
+	Phone
+	ScrumTeam
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

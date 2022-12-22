@@ -1,0 +1,165 @@
+Java Day35
+Topic: OOP Encapsulation
+
+package name: day35_Encapsulation
+
+warmup tasks:
+
+	1. Create a class named Person:
+			Variables:
+				name, age, gender, language, planet, isHuman, hasNose, numberOfWings, numberOfHead
+
+			Add a constructor to initialize all the fields
+
+			Add a static block to initialize all the statics
+
+			Methods:
+				printPlanetName()
+				eat(String food)
+				drink(String drink)
+				toString()
+
+
+	2. create a class named CybertekStudent
+            Variables:
+                name, gender, age, batchNumber, groupNumber, schoolName, fieldOfStudy, programmingLanguage, secretCode
+
+            Add a constructor to initialize all the fields
+
+            Add a static block to initialize all the statics
+
+            methods:
+                printSchoolName();
+                printSecretCode();
+                attendClass():
+                study()
+                toString()
+
+
+OOP Principles (Object Oriented Programming)
+
+    * There are 4 Object Oriented Programming (OOP) principles:
+
+            • Encapsulation (Data Hiding)
+            • Inheritance (Is A Relation)
+            • Abstraction
+            • Polymorphism
+
+    * OOP :A design pattern of the applications in an organized and in a modular way
+
+           ---Once you use OOP concepts in your codes it will be centralised structure
+           ---OOP concepts allows you to reuse the features that might be common
+              in multiple different objects and different classes
+           ---Will be convenience to manage features in different classes and objects,
+              by using OOP concepts we can use one feature in different classes and different objects
+           ---Helps you to avoid duplication, from hundred lines of codes to a few lines of codes,
+              Increases reusability of common features between classes
+           ---Centralised structure ==> You just go the one place to change codes, it will affect all codes
+
+           Lots of advantages...
+
+           ---Easy to maintain
+           ---Have less codes
+           ---Avoid duplication ==> Means less memory usage
+           ---Improves reusability
+
+    Encapsulation (Data Hiding)
+
+        • An object hides its internal data from code that’s outside the class
+        • Only the current class’ methods can directly access and make changes to the instance variables
+        • Hide an instance variable by giving private access modifier and making the methods
+          that access those fields public
+        • These public methods are called getters & setters (accessor and mutator)
+
+
+        Access modifier          Description
+
+        private                  When the private access modifier is applied to a class member,
+                                 the member can not be accessed by code outside the class.
+
+        public                   When the public access modifier is applied to a class member, the
+                                 member can be accessed by code inside the class or outside.
+
+
+    Getters & Setters
+
+        • Both are public instance methods used to protect our data and make our code more secure
+        • Getter is used for reading the private data (instance variable) only
+        • Setter is used for writing (modifying) the private data (instance variable) only
+
+        Getters Method
+            • An instance method that returns the private instance variable
+            • Does not pass any parameter
+            • Return type must match with the data type of the private instance variable
+
+       Exp  :      public class Person {
+
+                      private int age;
+
+                      public int getAge (){
+                         return age
+                      }
+                   }
+
+        Setters Method
+            • An instance method with the return type of void
+            • Passes a parameter, and parameter will be assigned to the private instance variable
+            • Data type of the parameter must match with the data type of the private instance variable
+
+         Exp  : public class Person {
+
+                    private String name;
+
+                    public void setName (String name){
+                     this.name = name;
+                    }
+                 }
+
+      ***** Public data has no restrictions (name can be space, age can be 2000)
+            we cannot control over fileds of an object
+            so we need to use private variables
+
+      ***** Getter and setter are methods and we can add conditions inside the methods so we can control the datas
+
+      ***** Having separate getters and setters makes your codes flexible, sometimes you need change just one data not all of them
+
+
+Task:
+
+	1. Create an Employee Class:
+			private variables:
+				name, gender, age, salary
+
+			Encapsulate all the private fields
+
+				1. Name can not be empty
+				2. gender can not anything other than female or male
+				3. age can not be less than 16, and greater than 90
+				4. salary can not be zero or negative
+
+
+	2. Create a class named Circle
+
+			private variables:
+				radius
+
+			public variable:
+				pi
+
+		 	Encapsulate all the private fields
+
+		 			1. radius of the circle can not be zero or negative
+
+ 			Add a constructor that can set the raidus of coircle when circle object is created
+
+ 			Methods:
+
+ 				calcArea()
+ 				calcPerimeter()
+ 				toString()
+
+
+
+
+
+
