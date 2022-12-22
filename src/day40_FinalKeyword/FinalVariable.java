@@ -24,7 +24,7 @@ public class FinalVariable {
         final String name;
 
         name = "Java";
-        //   name = "Wooden Spoon";
+        //   name = "Wooden Spoon"; Error
         System.out.println(name);
 
         System.out.println("----------------------------------------");
