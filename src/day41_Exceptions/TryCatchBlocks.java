@@ -67,7 +67,7 @@ public class TryCatchBlocks {
 
 
 
-        System.out.println("Hello");
+        System.out.println("Test4 Started");
 
         try {
             Thread.sleep(3000);
@@ -76,7 +76,7 @@ public class TryCatchBlocks {
             e.printStackTrace();
         }
 
-        System.out.println("Cydeo");
+        System.out.println("Test4 Completed");
 
         System.out.println("------------------------------------------");
 
