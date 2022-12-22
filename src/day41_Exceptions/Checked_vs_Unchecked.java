@@ -48,8 +48,8 @@ public class Checked_vs_Unchecked {
 
     //  FileInputStream file = new FileInputStream("path of the file"); //  exception java.io.FileNotFoundException;
 
-        //System.out.println("Java".charAt(1000)); // unchecked
-
+       System.out.println("Java".charAt(1000)); // unchecked
+                                            // java.lang.StringIndexOutOfBoundsException
 
 
 

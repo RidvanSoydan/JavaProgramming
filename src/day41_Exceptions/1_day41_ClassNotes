@@ -60,10 +60,10 @@ Exceptions: unexpected or unwanted events
         • Occurs during the during the runtime only
         • They can not be recovered and not recommended to handle them
 
+            OutOfMemoryError: heap memory is full
 
-OutOfMemoryError: heap memory is full
 
-Exception handlings :
+Exception handling :
 
 		1. Try & Catch blocks: used for handling checked and unchecked exceptions
 
@@ -78,18 +78,25 @@ Exception handlings :
 						}
 
 
-			Multi-catch block: parent exception type can not be placed before the child exception type
+			Multi-catch block   : parent exception type can not be placed before the child exception type
 
-			finally block: always gets executed regardless of the exception is being handled or not handled
+			finally block       : always gets executed regardless of the exception is being handled or not handled
 
-							to stop the execution of the finally block: Syste.exit(0)
-
-
-Interview Question:
-
-		final vs finally vs finalize
+							        to stop the execution of the finally block: System.exit(0)
 
 
+
+        Interview Question:
+
+        Difference between final vs finally vs finalize.
+
+            final   : is a KEYWORD for variables, methods, classes and make them unchangeable.
+
+            finally : is a BLOCK. optional for try§catch (last block) in exception handling.
+                      It always get executed, if we manually not terminate the program.
+
+            finalize: is a METHOD that the garbage collector calls it to destroy the object.
+                      It comes from Object class, and every object has finalize method.
 
 
 
