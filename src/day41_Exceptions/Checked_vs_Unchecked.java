@@ -2,6 +2,8 @@ package day41_Exceptions;
 
 import day39_Encapsulation_Inheritance_Recap.cydeoTask.Student;
 
+import java.io.FileInputStream;
+
 public class Checked_vs_Unchecked {
 
     public static void main(String[] args) {
@@ -44,7 +46,7 @@ public class Checked_vs_Unchecked {
         System.out.println("Cydeo");
 
 
-        // FileInputStream file = new FileInputStream("path of the file");
+    //  FileInputStream file = new FileInputStream("path of the file"); //  exception java.io.FileNotFoundException;
 
         //System.out.println("Java".charAt(1000)); // unchecked
 
