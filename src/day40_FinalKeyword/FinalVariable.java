@@ -23,7 +23,6 @@ public class FinalVariable {
 
         System.out.println(pi);
 
-
         final String name;
 
         name = "Java";
