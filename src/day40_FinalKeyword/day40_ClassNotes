@@ -41,6 +41,7 @@ Final Keyword: Unchangeable
         • Variable becomes a constant.
         • The value of the variable can not be modified.
         • We can not reassign a final variable
+        • Setters wont be created for final instance variables
 
     Final Method
         • Implementation of the method becomes unchangeable

@@ -13,7 +13,6 @@ public class FinalVariable {
         this.birthDay = birthDay;
     }
 
-
     public static void main(String[] args) {
 
         final double pi = 3.14;
@@ -24,21 +23,24 @@ public class FinalVariable {
         final String name;
 
         name = "Java";
-        //   name = "Wooden Spoon"; Error
+
+     // name = "Wooden Spoon"; Error
+
         System.out.println(name);
 
         System.out.println("----------------------------------------");
 
         FinalVariable obj = new FinalVariable("May/01");
-        //obj.birthDay = "June/01"; // final variables can not be reassigned
-        System.out.println(obj.birthDay);
 
+        //obj.birthDay = "June/01"; // final variables can not be reassigned
+
+        System.out.println(obj.birthDay); // May/01
 
         System.out.println("----------------------------------------");
 
-        //  FinalVariable.name = "Python";
+     // FinalVariable.name = "Python";
 
-        System.out.println(FinalVariable.name);
+        System.out.println(FinalVariable.name); // Batch 25
 
     }
 
