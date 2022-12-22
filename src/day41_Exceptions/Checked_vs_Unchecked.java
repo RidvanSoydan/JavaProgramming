@@ -29,24 +29,24 @@ public class Checked_vs_Unchecked {
 
         // str = null;
 
-        //   System.out.println( str.toUpperCase() );
+       // System.out.println( str.toUpperCase() );
 
         String str2 = ""; // object != null
-        System.out.println(str2.isEmpty());
+        System.out.println(str2.isEmpty()); // true
 
 
         // checked Exception:
 
         System.out.println("Hello");
 
-        //   Thread.sleep(3000); // checked
-
+     //  Thread.sleep(3000); // checked  - compile checks this exception
+                             // unreported exception java.lang.InterruptedException; must be caught or declared to be thrown
         System.out.println("Cydeo");
 
 
         // FileInputStream file = new FileInputStream("path of the file");
 
-        System.out.println("Java".charAt(1000)); // unchecked
+        //System.out.println("Java".charAt(1000)); // unchecked
 
 
 
