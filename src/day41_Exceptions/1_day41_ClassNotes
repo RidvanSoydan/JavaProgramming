@@ -32,11 +32,6 @@ Exceptions Topics   :
 		5. throws keyword
 		6. throw keyword
 
-
-OutOfMemoryError: heap memory is full
-
-
-
 Exceptions: unexpected or unwanted events
 
 		Unchecked (unexpected event)    : occurs during the runtime
@@ -48,6 +43,25 @@ Exceptions: unexpected or unwanted events
 					all the exceptions that are not RuntimeExceptions are checked exception
 
 
+    Unchecked Exceptions
+        • Exceptions that are not checked at compile time
+        • Occurs DURING THE RUNTIME
+        • Code will compile even if we do not handle them
+        • They HAVE IS A relationship with RuntimeException class (parent class of all exceptions)
+
+    checked Exceptions
+        • Exceptions that are checked at compile time
+        • Occurs DURING THE COMPILE TIME
+        • Code will not compile even if we do not handle them
+        • They DO NOT HAVE IS A relationship with RuntimeException class
+
+    Errors
+        • Indicates that an illegal operation is being performed
+        • Occurs during the during the runtime only
+        • They can not be recovered and not recommended to handle them
+
+
+OutOfMemoryError: heap memory is full
 
 Exception handlings :
 
