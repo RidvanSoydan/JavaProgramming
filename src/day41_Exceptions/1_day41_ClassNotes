@@ -72,7 +72,6 @@ Exception handling :
 
 						}catch (ExceptionClass  e){
 							e.printStackTrace();
-
 						}
 
             • When runtime exception happens, java will catch it and assigns to a variable in catch block

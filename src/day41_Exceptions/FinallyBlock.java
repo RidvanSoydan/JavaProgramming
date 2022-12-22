@@ -15,7 +15,7 @@ public class FinallyBlock {
             e.printStackTrace();
             System.exit(0);
 
-        }finally {
+        }finally { // Always executed after try & catch block whether an exception occurs or not
             System.out.println("Finally Block");
         }
 
