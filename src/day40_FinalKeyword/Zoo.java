@@ -10,6 +10,8 @@ public class Zoo {
         System.out.println(dog.getBreed());
         System.out.println(dog.getGender());
 
+     // dog.setGender(); Compile Error
+
         dog.drink();
 
 
