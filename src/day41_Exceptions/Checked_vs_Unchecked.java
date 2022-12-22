@@ -52,10 +52,5 @@ public class Checked_vs_Unchecked {
                                             // java.lang.StringIndexOutOfBoundsException
 
 
-
-
-
-
-
     }
 }
