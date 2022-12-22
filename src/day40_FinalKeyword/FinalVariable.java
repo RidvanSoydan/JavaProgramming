@@ -35,7 +35,7 @@ public class FinalVariable {
 
         FinalVariable obj = new FinalVariable("May/01");
 
-        //obj.birthDay = "June/01"; // final variables can not be reassigned
+        //obj.birthDay = "June/01"; // final variables can not be reassigned.
 
         System.out.println(obj.birthDay); // May/01
 

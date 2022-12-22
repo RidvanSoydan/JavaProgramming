@@ -17,7 +17,8 @@ public class Checked_vs_Unchecked {
         char[] characters = {'A', 'B', 'C'};
         //                    0,   1,   2
 
-        //  System.out.println( characters[99] );
+        // System.out.println( characters[99]); // Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException:
+        //                                        Index 99 out of bounds for length 3
 
         Student student = null;
 
