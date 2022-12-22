@@ -32,11 +32,32 @@ protected access modifier: Always visible within the same package
 
 Final Keyword: Unchangeable
 
+        • Used to restrict the user.
+        • Makes the features unchangeable.
+        • Final keyword is only applicable to a variable, a method or a class.
 
 
+    Final Variable
+        • Variable becomes a constant.
+        • The value of the variable can not be modified.
+        • We can not reassign a final variable
+
+    Final Method
+        • Implementation of the method becomes unchangeable
+        • Final methods can not be overridden
+
+    Final Class
+        • A class that can not be extended
+        • The class can not be a super (parent) class
 
 
+        Interview Question:
+        Difference between final vs finally vs finalize.
 
+            final: is a KEYWORD for variables, methods, classes. and make them unchangeable.
 
+            finally: is a BLOCK. optional for try§catch (last block)  in exception handling.
+            It always get executed, if we manually not terminate the program.
 
-
+            finalize: is a METHOD that the garbage collector calls it to destroy the object.
+            It comes from Object class, and every object has finalize method.
