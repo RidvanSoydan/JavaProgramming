@@ -85,11 +85,20 @@ Exception handling :
 
 			Multi-catch block   : parent exception type can not be placed before the child exception type
 
+                        • If the code in the try block will be capable of
+                        throwing more than one type of exception
+                        • To specify all the possible exceptions that
+                        could be thrown
+                        • Parent exception class can not be placed
+                        before child exception class
+
 			finally block       : always gets executed regardless of the exception is being handled or not handled
+                                  to stop the execution of the finally block: System.exit(0)
 
-							        to stop the execution of the finally block: System.exit(0)
-
-
+                        • An optional block that can be given after
+                        last catch block
+                        • Always executed after try & catch blocks
+                        whether an exception occurs or not
 
         Interview Question:
 

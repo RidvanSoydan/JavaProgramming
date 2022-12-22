@@ -1,6 +1,6 @@
 package day40_FinalKeyword;
 
-public class FinalVariables {
+public class FinalVariable {
 
         final String birthDay;
         final static String name;
@@ -9,7 +9,7 @@ public class FinalVariables {
             name = "Batch 25";
         }
 
-        public FinalVariables (String birthDay) {
+        public FinalVariable(String birthDay) {
             this.birthDay = birthDay;
         }
 
@@ -33,7 +33,7 @@ public class FinalVariables {
 
             System.out.println("----------------------------------------");
 
-            FinalVariables obj = new FinalVariables("May/01");
+            FinalVariable obj = new FinalVariable("May/01");
 
             //obj.birthDay = "June/01"; // final variables can not be reassigned.
 
@@ -43,7 +43,7 @@ public class FinalVariables {
 
             // FinalVariable.name = "Python";
 
-            System.out.println(FinalVariables.name); // Batch 25
+            System.out.println(FinalVariable.name); // Batch 25
 
         }
 
