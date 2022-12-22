@@ -68,14 +68,19 @@ Exception handling :
 		1. Try & Catch blocks: used for handling checked and unchecked exceptions
 
 						try{
-
 							exception code
 
-						}catch(ExceptionClass  e){
-
+						}catch (ExceptionClass  e){
 							e.printStackTrace();
 
 						}
+
+            • When runtime exception happens, java will catch it and assigns to a variable in catch block
+            • After it is successfully caught, we can use the variable and call some methods on the
+              exception object
+            • Popular methods of exception objects are:
+                    • printStackTrace(): prints a stack trace (full details) of the exception
+                    • getMessage(): returns only brief description of the exception
 
 
 			Multi-catch block   : parent exception type can not be placed before the child exception type
