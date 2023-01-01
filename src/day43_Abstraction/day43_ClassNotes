@@ -32,7 +32,7 @@ Abstraction Topics:
 		abstract class vs interface
 
 
-Abstraction : focusing on the essentials without worrying about the small details(implementations) of the method
+Abstraction : focusing on the essentials without worrying about the small details (implementations) of the method
 
         • Process of hiding implementation details from the user
         • Only the functionality will be provided to the user
@@ -74,7 +74,7 @@ Abstract Class
 Creating Object
         • Abstract class is meant to be inherited only, not meant to be instantiated
         • Abstract class is not a concrete class and object has to be concrete
-        • A sub class of abstract class is called concrete class, and it can be instantiated
+        • A sub class of abstract class is called concrete class and it can be instantiated
         • A Concrete class must implement all the inherited abstract methods
 
     Regular class                                   Abstract class
@@ -102,8 +102,6 @@ class Iphone extends Phone{
 class Samsung extends Phone{
 
 }
-
-
 
 
 
@@ -155,7 +153,6 @@ Employee task:
 		...
 
 
-
 Shape task:
 
 	Shape:
@@ -167,6 +164,7 @@ Shape task:
 
 		area()
 		perimeter()
+
 		toString(): name, area, perimeter
 
 
@@ -186,7 +184,7 @@ Shape task:
 
 
 
-Animnal task:
+Animal task:
 
 		abstract Animal
 
