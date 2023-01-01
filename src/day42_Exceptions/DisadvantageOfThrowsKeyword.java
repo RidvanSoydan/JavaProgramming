@@ -8,7 +8,7 @@ public class DisadvantageOfThrowsKeyword {
 
         System.out.println("Hello");
 
-        //    sleep(2.5); // throws
+        //    sleep(2.5); // error => throws => Everytime we need use "throws InterruptedException"
 
         System.out.println("Hello world");
 

@@ -5,18 +5,14 @@ Topic: Abstraction Intro
 
 package name: day43_Abstraction
 
-
 Exception:
 	checked & unchecked
 	try & catch
 	throws
 	throw
 
-
 throw new RuntimeException("Exception Message");
 
-
-Exceptions Short quiz due by 11:40 am
 
 
 OOP Encapsulation: hiding the data
@@ -38,13 +34,11 @@ Abstraction Topics:
 
 Abstraction: focusing on the essentials without worrying about the small details(implementations) of the method
 
-
-
-
-
-
-
-
+        • Process of hiding implementation details from the user
+        • Only the functionality will be provided to the user
+        • Focusing on the essential qualities of something rather than one specific example.
+          (Ignoring the irrelevant & unimportant)
+        • User will have the information on what the object does instead of how it does
 
 
 abstract class Device{
