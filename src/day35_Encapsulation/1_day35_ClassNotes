@@ -116,7 +116,7 @@ OOP Principles (Object Oriented Programming)
                  }
 
       ***** Public data has no restrictions (name can be space, age can be 2000)
-            we cannot control over fileds of an object
+            we cannot control over fields of an object
             so we need to use private variables
 
       ***** Getter and setter are methods and we can add conditions inside the methods so we can control the datas
