@@ -70,7 +70,7 @@ OOP Abstraction: concentrating on essentials (what it is),
          • Specifies the behavior(s) that a class should implement
          • Provides additional methods that subclass(es) need.
          • We can achieve 100% abstraction using interfaces
-
+         • Interface is not a class, it can be parent of other interfaces
 
 
 Animal Task:
