@@ -1,45 +1,41 @@
 Java Day45
+
+package name: day45_Abstraction
+
 Topics: OOP Abstraction Continue:
 					Interface
 					Interface vs Abstract class
 					extends vs implements
 
 
-package name: day45_Abstraction
+class           : blueprint of objects
+	              specifies what the object MUST have
+	              can be instantiated
+	              can be final
 
 
-
-class: blueprint of objects
-	   specifies what the object MUST have
-	   can be instantiated
-	   can be final
-
-
-abstract class: meant to be parent
-			    can have abstract method
-			    can not be instantiated
-			    can not be final
-
-			    MUST contain the common features of all the subclasses
+abstract class  : meant to be parent
+			      can have abstract method
+			      can not be instantiated
+			      can not be final
+			      MUST contain the common features of all the subclasses
 
 
-interface: blueprint of class
-		   specifies what the class(es) must have
-		   can not be instantiated
-		   can not be final
-
-		   to provide additional methods that any class needs
+interface       : blueprint of class
+		          specifies what the class(es) must have
+		          can not be instantiated
+		          can not be final
+		          to provide ADDITIONAL methods that any class needs
 
 
 		   What interface can have?
 
-		   		variables:final static variables ONLY
+		   		variables       : final static variables ONLY
+		   		methods         : abstract method, default method, static method
+		   		Access modifier : public ONLY
 
-		   		methods: abstract method, default method, static method
 
-		   		Access modifier: public ONLY
-
-		   what interface can not have?
+		   What interface can not have?
 
 		   		Instance variable
 		   		Instance methods
@@ -49,16 +45,18 @@ interface: blueprint of class
 
 
 		   why we need interface?
-		   		one class can extend one class ONLY
-		   		one class can implements multiple interfaces
-		   			(Multiple inheritance is allowed)
 
+		   		one class can extend one class ONLY (Abstraction)
+		   		one class can implements multiple interfaces (Multiple inheritance is allowed)
 		   		100% abstraction
 
+Implementing the Interface
+       • Class can extend only one superclass, but java allows a class to implement multiple interfaces
+       • Implements keyword is used to inherit from interface(s)
+       • When a class implements multiple interfaces, it must implement (override) all the abstract methods
 
 
-
-Abastract class vs interface: both are used for achieving abstraction
+Abstract class vs interface: both are used for achieving abstraction
 							  both can not be instantiated
 							  both can not be final
 							  both are meant to be inherited
@@ -70,7 +68,7 @@ Abastract class vs interface: both are used for achieving abstraction
 
 		  					can have constructor
 
-		  					4 access mdofiers
+		  					4 access modifiers
 
 		  	interface: one class can implement multiple interfaces
 

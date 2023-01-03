@@ -26,7 +26,7 @@ Browsers Task:
 
 				Encapsulate all the fields
 
-				Add Constructor that can set the fieled and displays the following message:
+				Add Constructor that can set the field and displays the following message:
 							"Opening "+ browserName+" browser"
 
 				Overridden methods and their implementations:
@@ -64,6 +64,7 @@ Browsers Task:
 
 
 	7. Create a class named DriverObjects:
+
 				Create objects of each driver
 
 				Test all the methods of each driver
