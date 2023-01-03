@@ -39,6 +39,5 @@ Exception Handlings:
 
 throw keyword: used for manually throw exception
 
-		throw ExceptionObject
+		throw ExceptionObject ==> throw new RuntimeException("Invalid Name");
 
-	String browser = "Cydeo";
