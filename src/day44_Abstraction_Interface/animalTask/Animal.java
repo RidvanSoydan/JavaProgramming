@@ -21,6 +21,7 @@ public abstract class Animal {
 
     public final static boolean canBreath;
 
+
     static {
         canBreath = true;
     }

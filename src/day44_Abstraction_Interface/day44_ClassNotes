@@ -63,6 +63,14 @@ OOP Abstraction: concentrating on essentials (what it is),
                     Can have constructor but we cannot create object with that constructor
 					Can have all the methods, variables, and blocks of non-abstract class + abstract methods
 
+    Interface
+
+         • It’s a template, a blueprint of a class
+         • Interface keyword is used to create interface
+         • Specifies the behavior(s) that a class should implement
+         • Provides additional methods that subclass(es) need.
+         • We can achieve 100% abstraction using interfaces
+
 
 
 Animal Task:
@@ -72,10 +80,10 @@ Animal Task:
 	interface Flyable:
 		 fly();
 
-	Interface Wild:
+	interface Wild:
 		hunt();
 
-	interface Plyable:
+	interface Playable:
 		play();
 
 	Abstract Animal:
@@ -84,15 +92,15 @@ Animal Task:
 
 
 
-   Dog extends Animal implemnts Plyable, Swimmable
+   Dog extends Animal implements Playable, Swimmable
 
-   Cat extends Animal implemnts Plyable
+   Cat extends Animal implements Playable
 
-   Cow extends Animal implemnts Plyable
+   Cow extends Animal implements Playable
 
-   Horse extends Animal implemnts Plyable
+   Horse extends Animal implements Playable
 
-   Parrot extends Animal implemnts Plyable, Flyable
+   Parrot extends Animal implements Playable, Flyable
 
    Tiger extends Animal implements Wild
 
@@ -102,23 +110,23 @@ Animal Task:
 
    Falcon extends Animal implements Wild, Flyable
 
-   Dolphin extends Animal implemnts Plyable, Swimmable
+   Dolphin extends Animal implements Playable, Swimmable
 
    Shark extends Animal implements Wild, Swimmable
 
-   Duck extends Animal implements Swimmable, Flyable, Plyable
+   Duck extends Animal implements Swimmable, Flyable, Playable
 
-   Java extends Animal implements Swimmable, Flyable, Plyable, Wild
+   Java extends Animal implements Swimmable, Flyable, Playable, Wild
 
    ...
 
 
 
-Person implements Swimmable, Plyable
+Person implements Swimmable, Playable
 
 Boat implements Swimmable
 
-Airplane implemnts Flyable
+Airplane implements Flyable
 
 CydeoCar implements Swimmable, Flyable
 
