@@ -44,11 +44,12 @@ interface       : blueprint of class
 		   		private, default, protected access modifiers
 
 
-		   why we need interface?
+		   Why we need interface?
 
 		   		one class can extend one class ONLY (Abstraction)
 		   		one class can implements multiple interfaces (Multiple inheritance is allowed)
 		   		100% abstraction
+
 
 Implementing the Interface
        • Class can extend only one superclass, but java allows a class to implement multiple interfaces
@@ -56,31 +57,28 @@ Implementing the Interface
        • When a class implements multiple interfaces, it must implement (override) all the abstract methods
 
 
-Abstract class vs interface: both are used for achieving abstraction
+Abstract class vs interface : both are used for achieving abstraction
 							  both can not be instantiated
 							  both can not be final
 							  both are meant to be inherited
 
 
-		  	abstract class: one class can extends one abstract class
+		  	abstract class  : one class can extends one abstract class
+		  					  can have instances & statics
+		  					  can have constructor
+		  					  4 access modifiers
 
-		  					can have instances & statics
-
-		  					can have constructor
-
-		  					4 access modifiers
-
-		  	interface: one class can implement multiple interfaces
+		  	interface       : one class can implement multiple interfaces
 
 
 
-extends vs implements: both are used for inheritance
+extends vs implements   : both are used for inheritance
 
-		extends:
+		extends     :
 				class extends class
 				interface extends interface(s)
 
-		implements:
+		implements  :
 				class implements interface(s)
 
 
@@ -95,20 +93,13 @@ interface AutoPark:
 interface AutoPilot extends AutoPark
 	selfDriver();
 
-
-
 interface SearchContext:
 	findElement();
 	findElements();
 
-
 interface WebDriver extends SearchContext:
 	get()
 	close()
-
-
-
-
 
 
 Remaining topics:
