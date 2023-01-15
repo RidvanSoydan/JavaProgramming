@@ -96,12 +96,13 @@ OOP: Object Oriented Programming
 
 		1. Encapsulation: hiding the data by giving private access modifier
 
-					getter (raed)
+					getter (read)
 					setter (write)
 
 					If private data is final, we can not generate setter
 
-					POJO
+					POJO ==> Will be created in future (API Class)
+
 
 		2. Inheritance: Building "IS A" relationship (parent & child)
 
@@ -109,11 +110,11 @@ OOP: Object Oriented Programming
 
 				parent class: does not inherit any thing from child class
 
+				Object class is the parent of all the classes by default
 
-				Object class is the parent of all the classes by deafult
 
+				abstract TestBase {
 
-				abstract TesteBase
 					driver
 
 					setUp (@BeforeMethod):
@@ -123,11 +124,11 @@ OOP: Object Oriented Programming
 						implicitWait
 						navigateToURL
 
-
 					tearDown (@AfterMethod):
 						TakeScreenShot (If stailed)
 						Quit
 
+                }
 
 					TestClass1 extends TestBase
 
@@ -140,50 +141,44 @@ OOP: Object Oriented Programming
 
 		3. Abstraction: hiding the implementation details
 
-					Abstract method: method without the body
-									meant to be overriden
+					Abstract method     : method without the body
+									      meant to be overridden
 
 					2 ways:
 
-						Abstract class: not concrete ==> No objects
-										meant to be parent
+						Abstract class  :Not concrete ==> No objects
+										 meant to be parent
+										 class can extend one abstract class ONLY
 
-										class can extend one abstract class ONLY
+						Interface       :NOT a class. meant to be implemented
+								         used for providing additional methods that classes need
 
-						Interface: NOT a class. meant to be implemented
-								used for providing additional methods that classes need
+								         100% abstraction
 
-								100% abstraction
+								         public is the ONLY access modifier
 
-								public is the ONLY access modifier
+								         class can implement multiple interfaces
 
-								class can implement multiple interfaces
+								         Can Have:
+                                         Variable   : static & final ONLY
+                                         Methods    : abstract method, static method, default method
 
-								Can Have:
-									Variable: static & final ONLY
-									Methods: abstract method, static method, default method
-
-					WebDriver
-					WebElement
-					TakeScreenShot
-					JavaScriptExecuter
-					List
-					Set
-					...
-
-
-		4. Polymorphism: Ability of the objects to take on many forms
-
-						Shape shape = new Circle();
-						shape.area()
+                                            WebDriver
+                                            WebElement
+                                            TakeScreenShot
+                                            JavaScriptExecuter
+                                            List
+                                            Set
+                                            ...
 
 
+		4. Polymorphism : Ability of the objects to take on many forms
 
-
+						    Shape shape = new Circle();
+						    shape.area()
 
 
 Method Overriding vs Method Overloading
-
 
 
 Employee employee = new Tester();
@@ -195,13 +190,11 @@ ParentClass
 		"Parent version"
 	}
 
-
 ChildClass extends ParentClass
 
 	static void method1(){
 		"Child version"
 	}
-
 
 
 Short videos:

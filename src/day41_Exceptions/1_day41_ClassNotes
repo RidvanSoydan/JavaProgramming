@@ -94,10 +94,8 @@ Exception handling :
 			finally block       : always gets executed regardless of the exception is being handled or not handled
                                   to stop the execution of the finally block: System.exit(0)
 
-                        • An optional block that can be given after
-                        last catch block
-                        • Always executed after try & catch blocks
-                        whether an exception occurs or not
+                        • An optional block that can be given after last catch block
+                        • Always executed after try & catch blocks whether an exception occurs or not
 
         Interview Question:
 
