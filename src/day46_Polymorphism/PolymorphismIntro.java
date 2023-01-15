@@ -33,8 +33,6 @@ public class PolymorphismIntro {
             driver = new FireFoxDriver();
          */
 
-
-
         Employee tester = new Tester("Ali",30,'M',42,"SDET",145000.00);
         Employee developer = new Developer("Alex",28,'M',32,"Web Developer",155000.00);
         Employee teacher = new Teacher("Angel",28,'F',22,"English Teacher",85000.00);
