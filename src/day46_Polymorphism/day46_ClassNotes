@@ -12,8 +12,10 @@ Poly + Morphism ==> Many Forms
 • Occurs when reference type is parent class/interface and object type is child
 
         Reference Type   Object Type
-        Animal animal1 = new Dog ();
-        Animal animal1 = new Cat ();
+        Animal animal1 = new Dog();
+        Animal animal2 = new Cat();
+        Animal animal3 = new Bird();
+        Playable animal4 = new Cat();
 
 
 Calling method in polymorphism
