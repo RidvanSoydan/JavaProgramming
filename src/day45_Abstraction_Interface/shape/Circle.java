@@ -1,5 +1,25 @@
 package day45_Abstraction_Interface.shape;
 
+
+/*
+interface XX{
+
+}
+
+interface YY{
+
+}
+
+abstract class BB{
+
+}
+
+abstract class AA{
+
+}
+
+*/
+
 public class Circle extends Shape{
 
     public final static double pi;
