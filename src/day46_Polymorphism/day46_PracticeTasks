@@ -1,4 +1,6 @@
+
 1 Given the following array that contains the car objects:
+
 				Car[] cars = {
 		                new Toyota("Highlander", 2010, 25000, "White", 255000),
 		                new BMW("X5", 2014, 32000, "Red", 12000),
