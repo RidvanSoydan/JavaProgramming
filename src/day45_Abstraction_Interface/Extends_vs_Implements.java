@@ -1,7 +1,11 @@
 package day45_Abstraction_Interface;
 
 
-    //extends:
+import day44_Abstraction_Interface.animalTask.Animal;
+import day44_Abstraction_Interface.animalTask.Cat;
+import day44_Abstraction_Interface.animalTask.Dog;
+
+//extends:
     class C{
 
     }
