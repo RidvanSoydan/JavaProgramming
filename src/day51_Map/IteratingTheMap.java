@@ -25,12 +25,13 @@ public class IteratingTheMap {
         */
 
         System.out.println(students);
+        //{Alex=80, Andriy=98, Aygun=95, Maria=90, Ozan=99, Serkan=70, Ali=85}
 
         Map<String, Integer> earlyBirds = new HashMap<>(); // score >= 90
         Map<String, Integer> angryBirds = new HashMap<>(); // score < 90
 
         for (String key : students.keySet()) {
-            Integer value = students.get(key);
+            Integer value = students.get(key); // get(key) => Returns the value of the given key
             if(value >= 90){
                 earlyBirds.put(key, value);
             }else{
@@ -39,21 +40,22 @@ public class IteratingTheMap {
         }
 
         System.out.println("earlyBirds = " + earlyBirds);
-        System.out.println("angryBirds = " + angryBirds);
+        //earlyBirds = {Andriy=98, Aygun=95, Maria=90, Ozan=99}
 
+        System.out.println("angryBirds = " + angryBirds);
+        //angryBirds = {Alex=80, Serkan=70, Ali=85}
 
         Set<String> names = students.keySet();
 
         System.out.println("--------------------------------------------------------");
 
-        // Collection<Integer> scores = students.values();
+        // Collection<Integer> scores = students.values();// return type of values () is collection, all values (scores)
         List<Integer> scores = new ArrayList<>( students.values() );
-
-        System.out.println(scores);
+        System.out.println(scores); //[80, 98, 95, 90, 99, 70, 85]
 
 
         for (Integer value : students.values()) {
-            System.out.println(value);
+            System.out.print(value + ",  "); //80,  98,  95,  90,  99,  70,  85,
         }
 
         System.out.println("--------------------------------------------------------");
@@ -69,19 +71,18 @@ public class IteratingTheMap {
             if(score < minScore){
                 minScore =score;
             }
-
         }
 
-        System.out.println("maxScore = " + maxScore);
-        System.out.println("minScore = " + minScore);
+        System.out.println("maxScore = " + maxScore); //maxScore = 99
+        System.out.println("minScore = " + minScore); //minScore = 70
 
         System.out.println("--------------------------------------------------------");
 
         int max = Collections.max( students.values() );
         int min = Collections.min( students.values() );
 
-        System.out.println("max = " + max);
-        System.out.println("min = " + min);
+        System.out.println("max = " + max); //max = 99
+        System.out.println("min = " + min); //min = 70
 
         System.out.println("--------------------------------------------------------");
 
@@ -103,17 +104,16 @@ public class IteratingTheMap {
             }
         }
         */
-        System.out.println(count);
-
+        System.out.println(count); // 3
 
         System.out.println("--------------------------------------------------------");
 
+
         for (Map.Entry<String, Integer> entry : students.entrySet()) {
             //System.out.println(entry);
-            System.out.println(entry.getKey() +" : " +entry.getValue());
+            System.out.print(entry.getKey() +" : " +entry.getValue() + " --- ");
         }
-
-
+        //Alex : 80 --- Andriy : 98 --- Aygun : 95 --- Maria : 90 --- Ozan : 99 --- Serkan : 70 --- Ali : 85
 
 
 

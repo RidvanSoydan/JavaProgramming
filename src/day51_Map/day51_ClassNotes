@@ -55,7 +55,7 @@ Methods of Map  :
 
 		entrySet()  : returns all the entries (Entry: key & value) of map
 
-				getkey()
+				getKey()
 				getValue()
 				setValue()
 
