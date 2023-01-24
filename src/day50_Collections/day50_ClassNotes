@@ -1,0 +1,61 @@
+Java Day50
+Topics: 1. Collection continue - Iterable
+		2. Collection Review
+
+package name: day50_Collections
+
+Collections Framework   : consists of multiple interface, each interface is implemented by classes
+
+	Collection (I)  : dynamic sized
+					  ready methods
+					  for non-primitives ONLY
+
+					extended by List, Set, Queue
+
+				List (I)    : duplicates are allowed, has index number
+
+						ArrayList (C)   : searching/accessing elements is faster.
+
+						LinkedList (C)  : insertion /deletion of the element is faster, uses doubly linked list (pointer)
+
+						Vector (C)      : is Synhcronized ==> thread-safe
+
+						Stack (C)       : is Synhcronized ==> thread-safe. LIFO (Last in First out)
+
+								                pop() ===> LIFO
+
+
+				Set (I)     : duplicates are not allowed, does not have index number
+
+						HashSet (C)         : Maintains random order. Fastest
+
+						LinkedHashSet (C)   : Maintains insertion order
+
+						TreeSet (C)         : Maintains sorted order, does not accept null
+
+
+				Queue (I)   : duplicates are allowed, does not have index number. FIFO (First in First out)
+
+							        poll() ===> FIFO
+
+						PriorityQueue (C)   : Maintains random order
+
+						ArrayDequeue (C)    : Maintains insertion order
+
+						LinkedList (C)      : Maintains insertion order
+
+
+        Iterable
+
+            • Parent interface of Collection interface
+            • Allows the object to be Iterated by using Iterator
+            • Iterator is used when we want to remove elements whilst you iterate over a collection
+
+
+        How to use Iterator?
+
+            • We can obtain the Iterator by using the iterator() method of an Iterable
+            • Iterator provides the ready methods that can be used while traversing the collections:
+                    • hasNext( )
+                    • next( )
+                    • remove( )
