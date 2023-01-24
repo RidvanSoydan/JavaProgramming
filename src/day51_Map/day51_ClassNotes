@@ -60,6 +60,18 @@ Methods of Map  :
 				setValue()
 
 
+HashMap                     LinkedHashMap                 Hashtable                     TreeMap
+
+Not synchronized            Not synchronized              Synchronized                  Not synchronized
+
+allows one null key and     allows one null key and       does not allow any null key   does not allow any null key
+multiple null values        multiple null values          or null value                 but allows null values
+
+Maintains the random order  Maintains the insertion order Maintains the random order    Maintains the sorted order
+
+
+
+
 Enum    : a number of things
 
 
