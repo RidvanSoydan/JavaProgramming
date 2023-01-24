@@ -4,7 +4,7 @@ public class MonotonIncreasingOrDecreasing2 {
 
     public static void main(String[] args) {
 
-        int[] arr = {21, 154, 10, 959};  // This is monoton increasing
+        int[] arr = {21, 154, 160, 959};  // This is monoton increasing
 
         boolean monotonIncreasing = true;
         boolean monotonDecreasing = true;

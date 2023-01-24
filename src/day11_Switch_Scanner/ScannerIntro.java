@@ -10,7 +10,7 @@ public class ScannerIntro {
 
         Scanner input =                 new Scanner                             (System.in).useLocale(Locale.US);
 
-     //variableNamesMustBeMeaningfull   //constructor of scanner        //in this contructor we need to pass arguments
+     //variableNamesMustBeMeaningfull   //constructor of scanner        //in this contsructor we need to pass arguments
    //constructor has special            // that arguments is going to decide what you use the
    //names like class names             // scanner for.
                                         //object                        // in means getting, out means displaying in console
