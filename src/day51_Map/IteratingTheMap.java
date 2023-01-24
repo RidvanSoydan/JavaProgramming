@@ -48,6 +48,7 @@ public class IteratingTheMap {
         Set<String> names = students.keySet();
 
         System.out.println("--------------------------------------------------------");
+        System.out.println();
 
         // Collection<Integer> scores = students.values();// return type of values () is collection, all values (scores)
         List<Integer> scores = new ArrayList<>( students.values() );
@@ -55,7 +56,7 @@ public class IteratingTheMap {
 
 
         for (Integer value : students.values()) {
-            System.out.print(value + ",  "); //80,  98,  95,  90,  99,  70,  85,
+            System.out.print(value + "    "); //80    98    95    90    99    70    85
         }
 
         System.out.println("--------------------------------------------------------");
@@ -107,13 +108,14 @@ public class IteratingTheMap {
         System.out.println(count); // 3
 
         System.out.println("--------------------------------------------------------");
+        System.out.println();
 
 
         for (Map.Entry<String, Integer> entry : students.entrySet()) {
             //System.out.println(entry);
-            System.out.print(entry.getKey() +" : " +entry.getValue() + " --- ");
+            System.out.print(entry.getKey() +" : " +entry.getValue() + "   ");
         }
-        //Alex : 80 --- Andriy : 98 --- Aygun : 95 --- Maria : 90 --- Ozan : 99 --- Serkan : 70 --- Ali : 85
+        // Alex : 80   Andriy : 98   Aygun : 95   Maria : 90   Ozan : 99   Serkan : 70   Ali : 85
 
 
 

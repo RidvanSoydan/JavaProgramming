@@ -57,8 +57,7 @@ Methods of Map  :
 
 				getKey()    ==> Used with entrySet()
 				getValue()  ==> Used with entrySet()
-				setKey ()   ==> Used with entrySet()
-				setValue()  ==> Used with entrySet()
+		    	setValue()  ==> Used with entrySet()
 
 
 HashMap                     LinkedHashMap                 Hashtable                     TreeMap
