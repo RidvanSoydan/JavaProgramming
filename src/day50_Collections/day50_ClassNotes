@@ -56,6 +56,6 @@ Collections Framework   : consists of multiple interface, each interface is impl
 
             • We can obtain the Iterator by using the iterator() method of an Iterable
             • Iterator provides the ready methods that can be used while traversing the collections:
-                    • hasNext( )
-                    • next( )
+                    • hasNext( ) => Returns boolean, if there is an element that can be iterated
+                    • next( )    =>
                     • remove( )
