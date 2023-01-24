@@ -55,9 +55,10 @@ Methods of Map  :
 
 		entrySet()  : returns all the entries (Entry: key & value) of map
 
-				getKey()
-				getValue()
-				setValue()
+				getKey()    ==> Used with entrySet()
+				getValue()  ==> Used with entrySet()
+				setKey ()   ==> Used with entrySet()
+				setValue()  ==> Used with entrySet()
 
 
 HashMap                     LinkedHashMap                 Hashtable                     TreeMap
@@ -70,12 +71,10 @@ multiple null values        multiple null values          or null value         
 Maintains the random order  Maintains the insertion order Maintains the random order    Maintains the sorted order
 
 
-
-
 Enum    : a number of things
 
 
-        List< Map <String,Integer> >
+        List < Map <String,Integer> >
 
         Map < Map <String, Integer> , Map <String, Integer> >
 
