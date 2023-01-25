@@ -72,6 +72,10 @@ Maintains the random order  Maintains the insertion order Maintains the random o
 
 Enum    : a number of things
 
+            • A special data type
+            • Represents a group of constants (number of things)
+            • Used for containing fixed set of constants
+
 
         List < Map <String,Integer> >
 
