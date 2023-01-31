@@ -1,0 +1,109 @@
+Java Day52
+Topic: Map Continue
+	   Functional Interface & Lambda Intro
+
+package name: day52_Map_FunctionalInterface
+
+Warmup tasks:
+	1. Write a program that can find the unique characters from a String
+
+			Ex:
+					str = "aabcccdeeeef";
+
+			output:
+					{b=1, d=1, f=1}
+
+	2. Go to Package day52_Map_FunctionalInterface -> ListOfMapPractice1, and Complete all the given task requirments
+
+List of Map
+
+Array of Map
+
+Map of Map
+
+
+Assignments:
+	Write a program that can find the character that has the highest frequency in a String
+        Note: Must use a map
+
+        Ex:
+            str = "eeeeeaaabbbbccccdd"
+
+        Output:
+            {e=5, a=3, b=4, c=4, d=2 }
+            character e has the highest frequency
+
+
+	Write a program that can find the element that has the highest frequency in an arrayList
+	        Note: Must use a map
+
+	        Ex:
+	            list: [java, java, python, c#]
+
+	        output:
+	            [java=2, python=1, c#=1]
+	            element java has the highest frequency
+
+
+Functional Interface (SAM) ==> Last 3 years
+
+    • Known as SAM (Single Abstract Method) interface
+    • There is ONLY ONE abstract method in the interface (in regular interface not only one)
+    • Effectively acts as a function (not for inheritance)
+    • @FunctionalInterface annotation is applicable (Optional)
+
+
+Lambda Expression
+
+    • A function with no name and an identifier
+    • Can be defined in the place where they are needed
+    • Expresses the instances of a functional Interface
+    • Can be assigned to the instance of functional interface
+
+
+Syntax                              Description
+
+( ) -> { statements }               Takes no argument and executes the given statement(s) in
+                                    lambda expression’s body
+
+(Parameters) -> { statements }      Takes argument(s) and executes the given statements in
+                                    lambda expression’s body
+
+*** If there is one parameter we dont need to use paranthesis
+*** If you provide one expression inside the curly braces (body), we dont need to use curly braces
+*** If we use paranthesis in every situation, it wont go wrong
+
+Build In Functional Interfaces:
+
+    • Predicate
+    • Consumer
+    • Function
+    • BiPredicate
+    • BiConsumer
+    • BiFunction
+
+
+Stream
+
+    • Stream is not a data structure
+    • Stream is a method that takes inputs from a data structure ( Array & Collection )
+    • Stream is unable to change the data structure
+
+
+Methods of Stream
+    • After calling the stream() function from an Array/Collection,
+       we can access to the methods of stream
+
+        distinct()
+        collect()
+        toArray()
+        skip()
+        limit()
+        map()
+        filter()
+        count()
+        forEach()
+        allMatch()
+        anyMatch()
+        nonMatch()
+

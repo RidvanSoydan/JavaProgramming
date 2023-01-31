@@ -56,7 +56,7 @@ static      : belongs to the class, for common values...
 
 		        • There is only one copy of statics that's shared by all objects of the class
                 • Declared with static keyword
-                • Belongs to the class, and can be called through the class
+                • Belongs to the class and can be called through the class
                 • All the objects of the class shares the same copy
 
 Statics members  :
