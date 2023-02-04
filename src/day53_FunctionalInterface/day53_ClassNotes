@@ -1,18 +1,67 @@
 Java Day53
 Topics:	1. Build in functional interfaces:
-
-          • Predicate => Represents a function which takes one argument (any object) and returns boolean
-          • Consumer  => Represents a function which takes one argument (any object) and does not return a value
-          • Function  => Represents a function which takes one argument (any object) and return a value (any object)
-          • BiPredicate => Represents a function which takes two arguments (any objects) and returns boolean
-          • BiConsumer  => Represents a function which takes two argument (any object) and does not return a value
-          • BiFunction  => Represents a function which takes two arguments (any objects) and return a value (any object)
-
-
-		2. Stream
-
+        2. Stream
 
 package name: day53_FunctionalInterface
+
+
+Build In Functional Interfaces:
+
+    • Predicate => Represents a function which takes one argument (any object) and returns boolean
+    • Consumer  => Represents a function which takes one argument (any object) and does not return a value
+    • Function  => Represents a function which takes one argument (any object) and return a value (any object)
+    • BiPredicate => Represents a function which takes two arguments (any objects) and returns boolean
+    • BiConsumer  => Represents a function which takes two argument (any object) and does not return a value
+    • BiFunction  => Represents a function which takes two arguments (any objects) and return a value (any object)
+
+
+Stream
+
+    • Stream is not a data structure
+    • Stream is a method that takes inputs from a data structure ( Array & Collection )
+    • Stream is UNABLE TO CHANGE THE DATA STRUCTURE (Stream is temporary container)
+
+
+Methods of Stream
+    • After calling the stream() function from an Array/Collection,
+       we can access to the methods of stream
+
+        stream ()   => Gets all elements of collections or array
+
+        distinct()  => Takes all elements excluding the duplicates but can not change original data structure
+
+        collect()   => collects as collection
+                        ( Short cut => inside paranthesis Ctrl + Space => Shows the parameters which must be used)
+
+        toArray()   => collects as Array
+        skip(num)   => skips the first (num) elements
+
+        limit(num)  => the max size of the collection or array will be num
+                        List<Integer> list3 = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7,8,9,10));
+                        list3 = list3.stream().limit(7).skip(3).collect(Collectors.toList());
+
+        map()       => allows modify every element how you want to modify, must use predicate (lambda expression)
+                        List<Integer> list4 = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7,8,9,10));
+                        list4 = list4.stream().map( p -> p * 10 ).collect(Collectors.toList());
+
+        filter()    => allows filtering (getting specific elements), must use predicate (lambda expression)
+                        List<Integer> list5 = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7,8,9,10));
+                        List<Integer> evens = list5.stream().filter( p -> p % 2 == 0).collect(Collectors.toList());
+
+        count()     => generally used with filter (), how many are matching, returns long
+                       List<String> names = new ArrayList<>(Arrays.asList("Java", "java", "jAvA", "Python", "Ruby"));
+                       long countJava = names.stream().filter( p -> p.equalsIgnoreCase("java")).count();
+
+        forEach()   => Iterates stream
+                       names.stream().filter( p -> p.equalsIgnoreCase("java")).forEach( p -> System.out.println(p));
+
+        allMatch()  => if all the elements of data structure matching with the predicate condition, all must match for returning true
+
+        anyMatch()  => if any (one is enough) elements of data structure matching with the predicate condition
+
+        nonMatch()  => verify if any data structure does not contains the specific element that is given with predicate condition
+
+
 
 Warmup tasks:
 	1. Go to Package day53_FunctionalInterface -> MapPractice

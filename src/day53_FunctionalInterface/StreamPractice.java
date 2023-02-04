@@ -12,7 +12,7 @@ public class StreamPractice {
 
         List<Integer> list1 = new ArrayList<>(Arrays.asList(1,1,2,2,3,3,4,4,5,5,6,6));
 
-        list1 = list1.stream().distinct().collect( Collectors.toList());
+        list1 = list1.stream().distinct().collect( Collectors.toList() );
 
         System.out.println(list1); //[1, 2, 3, 4, 5, 6]
 
