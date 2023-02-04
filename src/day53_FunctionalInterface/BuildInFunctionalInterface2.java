@@ -93,11 +93,12 @@ public class BuildInFunctionalInterface2 {
         System.out.println("---------------------------------------------");
 
         //1. create a function that takes two integers and returns the maximum integer
+
         BiFunction<Integer, Integer, Integer> maxNum = (a, b) -> (a>b)?a:b;
 
         int max = maxNum.apply(100, 200);
 
-        System.out.println(max);
+        System.out.println(max); // 200
 
         //2. create a function that can merge two integer arrays into a list
 
@@ -139,7 +140,8 @@ public class BuildInFunctionalInterface2 {
 
         Map<String, Integer> students = merge2.apply(names, scores);
 
-        System.out.println(students);
+        System.out.println(students); // {Kseniia=95, Aygun=98, Layan=90}
+
 
 
 

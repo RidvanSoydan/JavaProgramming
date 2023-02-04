@@ -1,12 +1,12 @@
 Java Day53
 Topics:	1. Build in functional interfaces:
 
-            • Predicate => Represents a function which takes one argument (any object) and returns boolean
-            • Consumer  => Represents a function which takes one argument (any object) and does not return a value
-            • Function  => Represents a function which takes one argument (any object) and return a value (any object)
-            • BiPredicate => Represents a function which takes two arguments (any objects) and returns boolean
-            • BiConsumer  => Represents a function which takes two argument (any object) and does not return a value
-            • BiFunction  => Represents a function which takes two arguments (any objects) and return a value (any object)
+          • Predicate => Represents a function which takes one argument (any object) and returns boolean
+          • Consumer  => Represents a function which takes one argument (any object) and does not return a value
+          • Function  => Represents a function which takes one argument (any object) and return a value (any object)
+          • BiPredicate => Represents a function which takes two arguments (any objects) and returns boolean
+          • BiConsumer  => Represents a function which takes two argument (any object) and does not return a value
+          • BiFunction  => Represents a function which takes two arguments (any objects) and return a value (any object)
 
 
 		2. Stream

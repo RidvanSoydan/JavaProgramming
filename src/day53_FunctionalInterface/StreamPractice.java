@@ -14,12 +14,12 @@ public class StreamPractice {
 
         list1 = list1.stream().distinct().collect( Collectors.toList());
 
-        System.out.println(list1);
+        System.out.println(list1); //[1, 2, 3, 4, 5, 6]
 
         int[] arr1 = {1,1,2,2,3,3,4,4,5,5,6,6};
         arr1 = Arrays.stream(arr1).distinct().toArray();
 
-        System.out.println(Arrays.toString(arr1));
+        System.out.println(Arrays.toString(arr1)); // [1, 2, 3, 4, 5, 6]
 
 
         List<Integer> list2 = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7,8,9,10));
